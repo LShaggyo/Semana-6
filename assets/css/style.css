@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; 
+    margin-right: 10px;
+    margin-top: 0; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.task-section {
+    text-align: left;
+}
+
+.task-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.task-section li {
+    padding: 5px 0;
+    font-size: 0.8rem;  
+}
+
+.task-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-section,
+.task-table {
+    width: 48%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.status-btn {
+    display: inline-block;
+    background-color: grey;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-right: 5px;
+}
+
+.status-btn:hover {
+    color: blue;
+}
+
+.status-btn.selected {
+    color: green;
+}
+
+.filter {
+    cursor: pointer;
+}

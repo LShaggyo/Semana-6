@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Tareas</h1>
+
+      <div class="input-task">
+        <label for="newTask">Nueva tarea:</label>
+        <input
+          type="text"
+          id="newTask"
+          name="newTask"
+          placeholder="Escribir tarea..."
+        />
+        <button>Agregar</button>
+      </div>
+      <hr />
+
+      <div class="task-container">
+        <div class="task-section">
+          <ul>
+            <li><span class="filter" id="showPending">Pendientes</span></li>
+            <li>
+              <span class="filter" id="showCompleted"
+                >Realizadas: <span id="completedTasks">0</span></span
+              >
+            </li>
+            <li id="totalText">Total: <span id="totalTasks">0</span></li>
+          </ul>
+        </div>
+        <div class="task-table">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tarea</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
